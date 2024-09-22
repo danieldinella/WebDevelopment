@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .mondrian{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-rows: 414px 9px 130px 10px 155px 9px 20px;
+      grid-template-columns: 320px 9px 198px 9px 153px 9px 50px;
+    }
+
+    .white{
+      background-color: #F0F1EC;
+      grid-area: 1 / 1 / 8 / 8;
+    }
+
+    .red{
+      background-color: #E72F24;
+      grid-area: 1 / 1 / 1 / 1;
+    }
+
+    .blue{
+      background-color: #004592;
+      grid-area: 3 / 7 / 3 / 7;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+      grid-area: 7 / 3 / 7 / 3;
+    }
+
+    .black{
+      background-color: #232629;
+      grid-area: 7 / 5 / 7 / 5;
+    }
+
+    .gap{
+      background-color: #000;
+    }
+
+    #v1{
+      grid-area: 1 / 2 / 8 / 2;
+    }
+    
+    #v2{
+      grid-area: 3 / 6 / 8 / 6;
+    }
+
+    #v3{
+      grid-area: 6 / 4 / 8 / 4;
+    }
+
+    #h1{
+      grid-area: 2 / 1 / 2 / 8;
+    }
+    
+    #h2{
+      grid-area: 6 / 1 / 6 / 7;
+    }
+    
+    #thick{
+      grid-area: 4 / 7 / 4 / 8;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="mondrian">
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+      <div class="gap" id="v1"></div>
+      <div class="gap" id="v2"></div>
+      <div class="gap" id="v3"></div>
+      <div class="gap" id="h1"></div>
+      <div class="gap" id="h2"></div>
+      <div class="gap" id="thick"></div>
+    </div>
+  </div>
+</body>
+
+</html>
